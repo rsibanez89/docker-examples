@@ -15,7 +15,8 @@ services:
     volumes:
       - wordpress:/var/www/html
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
-      - ./my-wordpress-theme:/var/www/html/wp-content/themes/my-wordpress-theme
+      # if you have a wordpress theme uncomment the following line:
+      # - ./my-wordpress-theme:/var/www/html/wp-content/themes/my-wordpress-theme
 
   db:
     image: mysql:5.7
